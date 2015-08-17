@@ -144,6 +144,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Libraries providers
+         */
+        Jlapp\Swaggervel\SwaggervelServiceProvider::class
+
     ],
 
     /*

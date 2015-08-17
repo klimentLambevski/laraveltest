@@ -1,0 +1,61 @@
+{
+    "basePath": "http://localhost",
+    "swaggerVersion": "1.2",
+    "apiVersion": "0.2",
+    "resourcePath": "/photo",
+    "apis": [
+        {
+            "path": "/photo",
+            "description": "Test get photo",
+            "operations": [
+                {
+                    "method": "GET",
+                    "summary": "Get all photos",
+                    "nickname": "getAllPhotos",
+                    "type": "Test",
+                    "responseMessages": [
+                        {
+                            "code": 200,
+                            "message": "No error"
+                        }
+                    ]
+                },
+                {
+                    "method": "POST",
+                    "summary": "Create new photo",
+                    "nickname": "createPhoto",
+                    "type": "Test",
+                    "parameters": [
+                        {
+                            "paramType": "form",
+                            "name": "PhotoName",
+                            "type": "string",
+                            "required": true,
+                            "allowMultiple": false,
+                            "description": "Name of the photo"
+                        }
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 200,
+                            "message": "Success"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "models": {
+        "Test": {
+            "id": "Test",
+            "required": [
+                "test"
+            ],
+            "properties": {
+                "test": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

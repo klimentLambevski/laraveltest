@@ -1,0 +1,10 @@
+{
+    "apiVersion": "",
+    "swaggerVersion": "1.2",
+    "apis": [
+        {
+            "path": "/photo",
+            "description": "Test get photo"
+        }
+    ]
+}
